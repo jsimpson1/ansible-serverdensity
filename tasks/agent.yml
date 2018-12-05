@@ -52,9 +52,6 @@
   notify: restart sd-agent
   when: ansible_os_family == "RedHat"
 
-- name: Getting some extra facts
-  action: ec2_facts
-
 - name: Check to see if we previously upgraded the Server Density agent from v1 to v2
   stat:
     path: /var/log/sd-upgrade-v2-key.log.json
