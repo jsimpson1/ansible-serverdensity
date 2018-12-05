@@ -22,10 +22,7 @@ This playbook will install the Server Density v2 agent, allowing for custom conf
 Create an API token using [these directions](https://apidocs.serverdensity.com/#authentication).
 
 Edit the following files:
-* `roles/serverdensity/vars/main.yml` #Required
-* `inventories/hosts` #Required
-* `serverdensity.yml`
-* `roles/serverdensity/templates/conf.d/*` #Only need to update if you choose to install official plugins.
+* `templates/conf.d/*` #Only need to update if you choose to install official plugins.
 
 ## Upgrade v_1 to v_2
 To Upgrade v_1 to v_2 set following variable `upgrade_v2: yes`.
